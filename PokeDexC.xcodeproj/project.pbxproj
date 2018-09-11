@@ -8,24 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		C3FEC11F2148231B005B9644 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C3FEC11E2148231B005B9644 /* AppDelegate.m */; };
-		C3FEC1222148231B005B9644 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3FEC1212148231B005B9644 /* ViewController.m */; };
 		C3FEC1252148231B005B9644 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3FEC1232148231B005B9644 /* Main.storyboard */; };
 		C3FEC12721482320005B9644 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3FEC12621482320005B9644 /* Assets.xcassets */; };
 		C3FEC12A21482320005B9644 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3FEC12821482320005B9644 /* LaunchScreen.storyboard */; };
 		C3FEC12D21482320005B9644 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C3FEC12C21482320005B9644 /* main.m */; };
+		C3FEC1372148259B005B9644 /* CRAPokemon.m in Sources */ = {isa = PBXBuildFile; fileRef = C3FEC1362148259B005B9644 /* CRAPokemon.m */; };
+		C3FEC13C21482A17005B9644 /* CRAPokemonController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3FEC13B21482A17005B9644 /* CRAPokemonController.m */; };
+		C3FEC13F214853A9005B9644 /* PokeSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FEC13E214853A9005B9644 /* PokeSearchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C3FEC11A2148231B005B9644 /* PokeDexC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokeDexC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3FEC11D2148231B005B9644 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C3FEC11E2148231B005B9644 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C3FEC1202148231B005B9644 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		C3FEC1212148231B005B9644 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		C3FEC1242148231B005B9644 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C3FEC12621482320005B9644 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C3FEC12921482320005B9644 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C3FEC12B21482320005B9644 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C3FEC12C21482320005B9644 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C3FEC1352148259B005B9644 /* CRAPokemon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRAPokemon.h; sourceTree = "<group>"; };
+		C3FEC1362148259B005B9644 /* CRAPokemon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRAPokemon.m; sourceTree = "<group>"; };
+		C3FEC13A21482A17005B9644 /* CRAPokemonController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRAPokemonController.h; sourceTree = "<group>"; };
+		C3FEC13B21482A17005B9644 /* CRAPokemonController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRAPokemonController.m; sourceTree = "<group>"; };
+		C3FEC13D214853A9005B9644 /* PokeDexC-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PokeDexC-Bridging-Header.h"; sourceTree = "<group>"; };
+		C3FEC13E214853A9005B9644 /* PokeSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeSearchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,17 +64,53 @@
 		C3FEC11C2148231B005B9644 /* PokeDexC */ = {
 			isa = PBXGroup;
 			children = (
+				C3FEC13921482A01005B9644 /* ModelController */,
+				C3FEC138214829A4005B9644 /* ViewControllers */,
+				C3FEC1342148258E005B9644 /* Model */,
+				C3FEC13321482584005B9644 /* Resources */,
+			);
+			path = PokeDexC;
+			sourceTree = "<group>";
+		};
+		C3FEC13321482584005B9644 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				C3FEC11D2148231B005B9644 /* AppDelegate.h */,
 				C3FEC11E2148231B005B9644 /* AppDelegate.m */,
-				C3FEC1202148231B005B9644 /* ViewController.h */,
-				C3FEC1212148231B005B9644 /* ViewController.m */,
 				C3FEC1232148231B005B9644 /* Main.storyboard */,
 				C3FEC12621482320005B9644 /* Assets.xcassets */,
 				C3FEC12821482320005B9644 /* LaunchScreen.storyboard */,
 				C3FEC12B21482320005B9644 /* Info.plist */,
 				C3FEC12C21482320005B9644 /* main.m */,
 			);
-			path = PokeDexC;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C3FEC1342148258E005B9644 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C3FEC1352148259B005B9644 /* CRAPokemon.h */,
+				C3FEC1362148259B005B9644 /* CRAPokemon.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C3FEC138214829A4005B9644 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C3FEC13E214853A9005B9644 /* PokeSearchViewController.swift */,
+				C3FEC13D214853A9005B9644 /* PokeDexC-Bridging-Header.h */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C3FEC13921482A01005B9644 /* ModelController */ = {
+			isa = PBXGroup;
+			children = (
+				C3FEC13A21482A17005B9644 /* CRAPokemonController.h */,
+				C3FEC13B21482A17005B9644 /* CRAPokemonController.m */,
+			);
+			path = ModelController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,6 +144,7 @@
 				TargetAttributes = {
 					C3FEC1192148231B005B9644 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 					};
 				};
 			};
@@ -141,9 +184,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3FEC1222148231B005B9644 /* ViewController.m in Sources */,
 				C3FEC12D21482320005B9644 /* main.m in Sources */,
+				C3FEC1372148259B005B9644 /* CRAPokemon.m in Sources */,
+				C3FEC13C21482A17005B9644 /* CRAPokemonController.m in Sources */,
 				C3FEC11F2148231B005B9644 /* AppDelegate.m in Sources */,
+				C3FEC13F214853A9005B9644 /* PokeSearchViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,15 +328,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 23QW9JU9DK;
-				INFOPLIST_FILE = PokeDexC/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/PokeDexC/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.Adcock.PokeDexC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PokeDexC/ViewControllers/PokeDexC-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -300,15 +349,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 23QW9JU9DK;
-				INFOPLIST_FILE = PokeDexC/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/PokeDexC/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.Adcock.PokeDexC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PokeDexC/ViewControllers/PokeDexC-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
